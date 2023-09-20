@@ -1,0 +1,21 @@
+<style>
+html {
+	
+}
+body {
+	font-family: "Cascadia", Lucida Console, monospace;
+	background-color: rgb(225, 225, 225);
+}
+h1 {
+	font-family: "Cascadia", Lucida Console, monospace;
+	color: rgb(0, 0, 0);
+	font-size: 50px;
+}
+h2 {
+	font-family: monospace;
+}
+p {
+	color: rgb(50, 50, 50);
+	font-size: 20px;
+}
+</style>
