@@ -2,6 +2,7 @@
 html {
 	
 }
+/*NO CASCADIA ON LAPTOP?*/
 body {
 	font-family: "Cascadia", Lucida Console, monospace;
 	background-color: rgb(225, 225, 225);
@@ -12,7 +13,9 @@ h1 {
 	font-size: 50px;
 }
 h2 {
-	font-family: monospace;
+	/*font-family: Lucida Console, monospace;*/
+	color: rgb(50, 50, 50);
+	font-size: 35px;
 }
 p {
 	color: rgb(50, 50, 50);
