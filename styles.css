@@ -21,4 +21,7 @@ p {
 	color: rgb(50, 50, 50);
 	font-size: 20px;
 }
+a:hover {
+	color: darkblue;
+}
 </style>
