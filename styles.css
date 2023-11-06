@@ -5,7 +5,7 @@ html {
 /*NO CASCADIA ON LAPTOP?*/
 body {
 	font-family: "Cascadia", Lucida Console, monospace;
-	background-color: rgb(225, 225, 225);
+	background-color: rgb(225, 225, 200);
 }
 h1 {
 	font-family: "Cascadia", Lucida Console, monospace;
