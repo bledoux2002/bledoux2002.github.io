@@ -6,11 +6,44 @@ html {
 body {
 	font-family: "Cascadia", Lucida Console, monospace;
 	background-color: rgb(225, 225, 200);
+	margin: 50px;
+	line-height: 1.5;
+	text-align: justify;
+	
+}
+nav {
+	margin: 0px;
+	margin-left: -50px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav a:hover {
+	color: white;
+	background-color: rgb(128, 128, 255);
+}
+nav a:hover:not(.active) {
+	background-color: #111;
+}
+.active {
+	background-color: rgb(127, 127, 255);
 }
 h1 {
 	font-family: "Cascadia", Lucida Console, monospace;
 	color: rgb(0, 0, 0);
 	font-size: 50px;
+	line-height: 2;
 }
 h2 {
 	/*font-family: Lucida Console, monospace;*/
