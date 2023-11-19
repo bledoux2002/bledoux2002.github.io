@@ -8,14 +8,12 @@ body {
 	background-color: rgb(225, 225, 200);
 	margin: 50px;
 	line-height: 1.5;
-	text-align: justify;
 	
 }
 nav {
-	margin: 0px;
 	margin-left: -50px;
+	margin-right: -50px;
 	padding: 0;
-	overflow: hidden;
 	background-color: #333;
 	position: fixed;
 	top: 0;
@@ -39,6 +37,19 @@ nav a:hover:not(.active) {
 .active {
 	background-color: rgb(127, 127, 255);
 }
+.footer {
+	position: absolute;
+	margin-left: -50px;
+	margin-right: -50px;
+	padding: 0;
+	background-color: #333;
+	color: white;
+	text-align: center;
+}
+
+.footer a {
+	color: white;
+}
 h1 {
 	font-family: "Cascadia", Lucida Console, monospace;
 	color: rgb(0, 0, 0);
@@ -53,6 +64,7 @@ h2 {
 p {
 	color: rgb(50, 50, 50);
 	font-size: 20px;
+	text-align: justify;
 }
 a:hover {
 	color: darkblue;
