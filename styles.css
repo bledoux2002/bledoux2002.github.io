@@ -14,7 +14,7 @@ nav {
 	margin-left: -5%;
 	margin-right: -5%;
 	padding: 0;
-	background-color: #333;
+	background-color: rgb(63, 63, 63);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -29,10 +29,10 @@ nav a{
 }
 nav a:hover {
 	color: white;
-	background-color: rgb(128, 128, 255);
+	background-color: rgb(127, 127, 255);
 }
 nav a:hover:not(.active) {
-	background-color: #111;
+	background-color: rgb(31, 31, 31);
 }
 .active {
 	background-color: rgb(127, 127, 255);
@@ -55,5 +55,15 @@ p {
 }
 a:hover {
 	color: darkblue;
+}
+#cover-img {
+	width: 45%;
+	float: right;
+	margin-left: 5%;
+	margin-bottom: 2.5%;
+	border: solid;
+	border-width: 25px;
+	border-color: rgb(127, 127, 255);
+	border-radius: 2.5%;
 }
 </style>
