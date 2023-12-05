@@ -20,6 +20,7 @@ nav {
 	top: 0;
 	width: 100%;
 }
+
 nav a{
 	float: left;
 	display: block;
@@ -28,35 +29,43 @@ nav a{
 	padding: 14px 16px;
 	text-decoration: none;
 }
+
 nav a:hover {
 	color: white;
 	background-color: rgb(127, 127, 255);
 }
+
 nav a:hover:not(.active) {
 	background-color: rgb(31, 31, 31);
 }
+
 .active {
 	background-color: rgb(127, 127, 255);
 }
+
 h1 {
 	font-family: "Cascadia", Lucida Console, monospace;
 	color: rgb(0, 0, 0);
 	font-size: 50px;
 	line-height: 2;
 }
+
 h2 {
 	/*font-family: Lucida Console, monospace;*/
 	color: rgb(50, 50, 50);
 	font-size: 35px;
 }
+
 p {
 	color: rgb(50, 50, 50);
 	font-size: 20px;
 	text-align: justify;
 }
+
 a:hover {
 	color: darkblue;
 }
+
 #cover-img {
 	width: 45%;
 	float: right;
@@ -66,5 +75,33 @@ a:hover {
 	border-width: 25px;
 	border-color: rgb(127, 127, 255);
 	border-radius: 2.5%;
+}
+
+.panel {
+	padding: 25px;
+	width: 50%;
+}
+
+.panel img {
+	border: solid;
+	border-width: 25px;
+	border-color: rgb(127, 127, 255);
+	width: 90%;
+	float: center;
+}
+
+.panel a {
+	width: 90%;
+	background-color: rgb(127, 127, 255);
+	float: center;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.panel a:hover {
+	background-color: rgb(95, 95, 255);
 }
 </style>
