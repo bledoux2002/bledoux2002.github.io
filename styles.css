@@ -91,7 +91,7 @@ a:hover {
 	float: left;
 }
 
-.panel #title {
+#title {
 	width: 45%;
 	background-color: rgb(127, 127, 255);
 	font-size: 32px;
@@ -102,7 +102,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.panel #title:hover {
+#title:hover {
 	background-color: rgb(95, 95, 255);
 }
 
