@@ -106,7 +106,7 @@ a:hover {
 	background-color: rgb(95, 95, 255);
 }
 
-.panel p {
+#desc {
 	width: 50%;
 	color: rgb(255, 255, 255);
 	background-color: rgb(63, 63, 63);
