@@ -32,7 +32,7 @@ nav a{
 
 nav a:hover {
 	color: white;
-	background-color: rgb(127, 127, 255);
+	background-color: rgb(95, 95, 255);
 }
 
 nav a:hover:not(.active) {
@@ -79,29 +79,52 @@ a:hover {
 
 .panel {
 	padding: 25px;
-	width: 50%;
+	width: 95%;
+
 }
 
 .panel img {
 	border: solid;
 	border-width: 25px;
 	border-color: rgb(127, 127, 255);
-	width: 90%;
-	float: center;
+	width: 45%;
+	float: left;
 }
 
-.panel a {
-	width: 90%;
+.panel #title {
+	width: 45%;
 	background-color: rgb(127, 127, 255);
-	float: center;
+	font-size: 32px;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 25px 25px;
 	text-decoration: none;
 }
 
-.panel a:hover {
+.panel #title:hover {
 	background-color: rgb(95, 95, 255);
+}
+
+.panel p {
+	width: 50%;
+	color: rgb(255, 255, 255);
+	background-color: rgb(63, 63, 63);
+	float: right;
+	font-size: 18px;
+}
+
+.panel a {
+	color: rgb(127, 127, 255);
+}
+
+.panel a:hover {
+	color: rgb(95, 95, 255);
+}
+
+.flip {
+	display: inline-block;
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg); 
 }
 </style>
