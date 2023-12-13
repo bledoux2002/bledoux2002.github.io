@@ -88,6 +88,8 @@ a:hover {
 	border-color: rgb(127, 127, 255);
 	width: 45%;
 	float: left;
+	left: 0;
+	top: 0;
 }
 
 #title {
@@ -99,6 +101,8 @@ a:hover {
 	text-align: center;
 	padding: 25px 25px;
 	text-decoration: none;
+	left: 0;
+	bottom: 0;
 }
 
 #title:hover {
@@ -111,6 +115,7 @@ a:hover {
 	background-color: rgb(63, 63, 63);
 	float: right;
 	font-size: 18px;
+	right: 0;
 }
 
 .panel a {

@@ -24,7 +24,7 @@
 <h1>Projects</h1>
 
 <div class="panel">
-	<img src="./images/SIP.jpeg" alt="Procedural Tilemap Generation as 2D Open-World RPG">
+	<img src="./images/SIP.jpg" alt="Procedural Tilemap Generation as 2D Open-World RPG">
 	<p id="desc">Designed to be used as a general-use tool, the goal of this project is to allow for Unity developers to procedurally generate their game worlds with relative ease. The developer first provides a set of tiles and creates "TileData" objects for each one. These TileDatas allow for developers to assign rules to each tile, dictating which tiles can be placed next to each other, and the frequency of generating each tile. Multi-tile sprites are handled by allowing for "required tiles" in the TileDatas, forcing the necessary tiles to be generated in the appropriate relative locations to each other. After the TileData rules are defined, the tool generates in real-time. As unassigned tiles on the map come within a developer-defined range of the main camera, a list of valid tiles is created using the intersect of valid tiles adjacent to surrounding tiles (the valid tiles South of the tile immediately North, etc.). The map is saved to a JSON file so that tiles generated during runtime aren't lost. Current work involves eliminating "clamping" errors where a tile can be surrounded by tiles that have an empty intersect of compatible adjacent tiles sets. This is accomplished by simulating several layers around the empty tile so that once a valid generation is found, a tile is selected that is guaranteed to not cause any clamping errors. Future work will focus on adding more features and demonstrating the tool's capabilities in an open-world game. Upon completion this tool will be placed on the Unity Asset store as a free package. Created as a Senior-Year Integrative Project (SIP) for AT491/492: Independent Study under the Ammerman Center.</p>
 	<a id="title" href="https://github.com/bledoux2002/Unity-Procedural-Tile-Generation" target="_blank" rel="noopener noreferrer"><b>Procedural Tilemap Generator</b></a>
 </div>
@@ -42,13 +42,13 @@
 </div>
 
 <div class="panel">
-	<img src="./images/humphreys.jpeg" alt="Connecticut College campus bar, Humphrey's, in Unity">
+	<img src="./images/humphreys.jpg" alt="Connecticut College campus bar, Humphrey's, in Unity">
 	<p id="desc">The Connecticut College campus bar, Humphrey's, recreated in virtual reality using the Oculus Integration for Unity. The environment is used as a testing grounds for comparing and contrasting interaciton and locomotion with controllers and hand-tracking. Different features of the VR Bar include an ID scanner, a station to pour (and spill) a drink, and a functional pool table. Overall the benefits of using controllers far outweighed the immersion of using hand-tracking for interaction. Controllers are more consistent and easier for the headset to keep track of, while hand-tracking was jittery and unreliable. Completed as a final project for COM309: Graphics and Virtual Environments.</p>
 	<a id="title" href="https://github.com/bledoux2002/Humphreys-VR" target="_blank" rel="noopener noreferrer"><b>B<span class="flip">A</span>R</b></a>
 </div>
 
 <div class="panel">
-	<img src="./images/aimlab.jpeg" alt="Screenshot of AimLabs recreated in Unity">
+	<img src="./images/aimlab.jpg" alt="Screenshot of AimLabs recreated in Unity">
 	<p id="desc">A recreation of 3 gamemodes in <a href="https://store.steampowered.com/app/714010/Aimlabs/" target="_blank" rel="noopener noreferrer">AimLabs</a>, a popular aim-training game for FPS games. The goal was to set up testing scenarios in which to collect data relating to <a href="https://en.wikipedia.org/wiki/Fitts%27s_law" target="_blank" rel="noopener noreferrer">Fitt's Law</a> when applied in virtual reality. The first of the three modes recreated is Spidershot, in which an orb teleports on destruction to a random location alternating with the center of the test area. The second mode recreated is Gridshot, in which the orb will teleport to one randomized location in a predetermined 5x5 grid directly in front of the player upon being destroyed. The final mode recreated is Strafetrack, in which the orb will move side-to-side, randomly switching directions, and teleporting to a random location along that axis upon destruction. Completed as a midterm project for COM309: Graphics and Virtual Environments.</p>
 	<a id="title" href="https://github.com/bledoux2002/VR-AimLab" target="_blank" rel="noopener noreferrer"><b>AimLab VR</b></a>
 </div>
@@ -60,25 +60,31 @@
 </div>
 
 <div class="panel">
-	<img src="./images/doomout.jpeg" alt="Test Room in DOOMOUT">
+	<img src="./images/doomout.jpg" alt="Test Room in DOOMOUT">
 	<p id="desc">A post-apocalyptic Quake/Doom clone made in Unity. Current work involves creating and polishing basic mechanics. Future work will focus on level creation. Created as a personal project.</p>
 	<a id="title" href="https://github.com/bledoux2002/DOOMOUT" target="_blank" rel="noopener noreferrer"><b>DOOMOUT</b></a>
 </div>
 
 <div class="panel">
-	<img src="./images/starbeat.jpeg" alt="Mid-game screenshot showing stars progress towards middle">
+	<img src="./images/dsp.jpg" alt="Multiple Fundamental Frequencies Estimation">
+	<p id="desc">MATLAB project that takes sound files and uses examples to determine which fundamental frequencies are present. The program then recreates the sound file using the fundamental frequencies detected. Completed as a final project for COM312: Digital Sound Processing.</p>
+	<a id="title" href="https://github.com/bledoux2002/Multiple-Fundamental-Frequency-Estimation" target="_blank" rel="noopener noreferrer"><b>Multiple Fundamental Frequencies Estimation</b></a>
+</div>
+
+<div class="panel">
+	<img src="./images/starbeat.jpg" alt="Mid-game screenshot showing stars progress towards middle">
 	<p id="desc">2D space-themed rhythm game designed for touch screens. Specifically, this game was designed to make use of the <a href="https://www.conncoll.edu/information-services/instructional-technology/technologies-for-teaching-and-learning/visualization-wall/" target="_blank" rel="noopener noreferrer">Visualization Wall</a> in the basement of Shain Library, a collection of panels and lasers that come together to form an 8' by 4' touch screen. The core gameplay loop consists of tapping the stars as they cross the glowing ring on their way towards the centerpiece. The closer the center of the star is to the ring, the higher the point gain. Completed as a final project for COM217: Entertainment Software Design.</p>
 	<a id="title" href="https://github.com/bledoux2002/Rhythm-Fever" target="_blank" rel="noopener noreferrer"><b>Starbeat</b></a>
 </div>
 
 <div class="panel">
-	<img src="./images/uno.jpeg" alt="Mid-game of UNO! I am losing :(">
+	<img src="./images/uno.jpg" alt="Mid-game of UNO! I am losing :(">
 	<p id="desc">Python-based recreation of UNO! cardgame, can be run straight from the terminal. Pits the player against a very simple computer opponent with a small ruleset determining its playstyle. Completed as a final project for COM110: Introduction to Computer Science and Problem Solving.</p>
 	<a id="title" href="https://github.com/bledoux2002/UNO" target="_blank" rel="noopener noreferrer"><b>UNOpy</b></a>
 </div>
 
 <div class="panel">
-	<img src="./images/blackjack.jpeg" alt="Mid-game of Blackjack">
+	<img src="./images/blackjack.jpg" alt="Mid-game of Blackjack">
 	<p id="desc">Python-based recreation of Blackjack, can be run straight from the terminal. Pits the player against computer dealer following standard rules. Completed as a midterm project for COM110: Introduction to Computer Science and Problem Solving.</p>
 	<a id="title" href="https://github.com/bledoux2002/Blackjack" target="_blank" rel="noopener noreferrer"><b>BlackjackPY</b></a>
 </div>
