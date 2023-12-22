@@ -18,7 +18,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/mustache_desktop.png);
+    background-image: url(images/presentation_desktop.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -349,9 +349,9 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/mustache_mobile.png);
+        background-image: url(images/presentation_mobile.png);
     }
-    .header-text{
+    .header-text p{
         font-size: 16px;
     }
     .header-text h1{
