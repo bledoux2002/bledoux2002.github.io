@@ -1,31 +1,220 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewpot" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<script src="scripts.js"></script>
+<html lang="en">
 <head>
-	<title>Benjamin J. Ledoux</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Ledoux</title>
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd037d997b.js" crossorigin="anonymous"></script>
 	<base target="_blank" rel="noopener noreferrer">
 </head>
 <body>
+<!-- ---------header-------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"></div>
+            <ul id="sidemenu">
+                <li><a href="#header" target="_self">Home</a></li>
+                <li><a href="#about" target="_self">About</a></li>
+                <li><a href="#services" target="_self">Services</a></li>
+                <li><a href="#portfolio" target="_self">Portfolio</a></li>
+                <li><a href="#contact" target="_self">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Game Developer/Designer</p>
+            <h1><span>Benjamin</span> Ledoux</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/pfp.jpg" alt="Headshot">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>&emsp;&emsp;&emsp;&emsp;I am a senior undergraduate student at Connecticut College majoring in Computer Science. As a member 
+					of the Ammerman Center for Arts and Technology, I have shaped my studies around the intersection between art and tech. 
+					Specifically, I am studying the design and development of video games and other interactive media.
+					<br>&emsp;&emsp;&emsp;&emsp;My current studies include researching different diegetic methods of guiding users in virtual 
+					environments, and developing an open-source tool for the Unity engine that procedurally generates tilemaps. You can read 
+					more about my current and past work on the <a href="./projects.html" target="_self">Projects</a> page. Since the beginning 
+					of my Junior year, I have worked as a teacher's assistant in the Computer Science department at Conn, grading homeworks, 
+					conducting labs, and holding group study sessions for students to get help on homework, projects, and concepts discussed 
+					during class. Since Fall 2023, I have been the Communications Manager for the CS Student Advisory Board at Conn. On top of 
+					general SAB duties like helping to plan and prepare for events, along with providing new and useful resources to students, 
+					I also manage our social media accounts, emails, and design posters for events.
+					<br>&emsp;&emsp;&emsp;&emsp;As for personal projects, I am currently developing a terminal-based character creation and 
+					management program for the tabletop roleplaying game <a href="https://www.modiphius.net/en-us/pages/fallout-the-roleplaying-game">
+					Fallout 2d20</a> by Modiphius Entertainment, a Quake-style FPS in a post-apocalyptic setting, and an independent port of 
+					the card game "<a href="https://fallout.wiki/wiki/Caravan_(game)">Caravan</a>" from <em>Fallout: New Vegas</em>. The latter 
+					two projects are being developed on the Unity Engine. In-depth descriptions of all of my current and previous work, 
+					along with links to their GitHub repositories, can be found on the <a href="./projects.html" target="_self">Projects</a> 
+					page.
+					<br>&emsp;&emsp;&emsp;&emsp;In my free time I enjoy volleyball, soccer, snowboarding, photography, playing different 
+					pen-and-paper/tabletop roleplaying games, including Dungeons and Dragons and Fallout 2d20, and, of course, playing and 
+					developing video games.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Unity C#</span><br>Development of 2D and 3D games in the Unity Real-Time Development Platform</li>
+                        <li><span>Python</span><br>App and program development using Python coding language</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Spring 2022 - Current</span><br>Teacher's assistant, Computer Science department at Connecticut College</li>
+                        <li><span>Summer 2023</span><br>IT and Network Intern at Massachusetts Task Force 1</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Fall 2020 - Spring 2024 (expected)</span><br>Bachelor of Arts in Computer Science from Connecticut College</li>
+                        <li><span>Fall 2016 - Spring 2020</span><br>High School Diploma from Presentation of Mary Academy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>Unity C#</h2>
+                <p>Game and interactive media development using the Unity Real Time Development Platform. I have experience with Unity 2D, 3D, and Virtual Reality.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>4 years of experience through coursework, TA work helping students with their homeworks and projects, and personal projects.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----portfolio----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/projects/SIP_fit.jpg" alt="Procedural Tilemap Generation as 2D Open-World RPG">
+                <div class="layer">
+                    <h3>Procedural Tilemap Generation</h3>
+                    <p>General-use tool for dynamic generation of tilemaps in Unity</p>
+                        <a href="https://github.com/bledoux2002/Unity-Procedural-Tile-Generation"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/projects/research_fit.jpg" alt="Research Project Main Menu in Unity Real-Time Development Platform">
+                <div class="layer">
+                    <h3>Diegetic Direction</h3>
+                    <p>Research on immersive methods of guiding users through virtual environments</p>
+                        <a href="https://github.com/bledoux2002/Diegetic-Direction"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/projects/fallout_fit.jpg" alt="Fallout 2d20 Core Rulebook Cover from Modiphius Entertainment">
+                <div class="layer">
+                    <h3>Fallout 2d20 Character Manager</h3>
+                    <p>Terminal program to create and manage multiple characters in Fallout TTRPG</p>
+                        <a href="https://github.com/bledoux2002/Fallout-2d20-Character-Manager"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="./projects.html" class="btn" target="_self">See More</a>
+    </div>
+</div>
+<!-- ---------contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href=mailto:bledoux2002@gmail.com?subject=Website><i class="fa-solid fa-paper-plane"></i> bledoux2002@gmail.com</a></p>
+                <p><a href="tel:603-362-3841"><i class="fa-solid fa-square-phone"></i> 6033623841</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/benjamin-j-ledoux/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/bledoux2002"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="misc/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!-- Navigation -->
-<nav>
-	<a class="active" href="./index.html" target="_self">Home</a>
-	<a href="./projects.html" target="_self">Projects</a>
-	<a href="./about.html" target="_self">About Me</a>
-	<a href="./contact.html" target="_self">Contact</a>
-</nav>
+<!-- event is deprecated in js file, only works here -->
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
 
-<img id="cover-img" src="./images/presentation_small.jpg" alt="Presenting SIP at the Connecticut College All College Symposium, Fall 2023">
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
 
-<!-- Title -->
-<h1>Benjamin J. Ledoux</h1>
-<h2>Interactive Media Development</h2>
-<p>This website is under active development, please keep in mind it is currently optimized for a standard 16:9 desktop, and the layout is not guaranteed to work elsewhere. Features are still being added. Feel free to reach out with any comments or concerns through the <a href="./contact.html" target="_self">Contact</a> page.</p>
+<script>
+	var sidemenu = document.getElementById("sidemenu");
 
+	function openmenu(){
+    	sidemenu.style.right = "0";
+	}
+	function closemenu(){
+    	sidemenu.style.right = "-200px";
+	}
+</script>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbz2fh8vXq4qs5i-poRF07NBEC-X8mL89DqEvrhzW9JfdIJVWoeQddhGa6JR7OF5aTYWug/exec'
+	const form = document.forms['submit-to-google-sheet']
+	const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		  .then(response => {
+			  msg.innerHTML = "Message sent successfully"
+			  setTimeout(function(){
+				  msg.innerHTML = ""
+			  }, 5000)
+			  form.reset()
+		  })
+		  .catch(error => console.error('Error!', error.message))
+	  })
+</script>
 
 </body>
 </html>
