@@ -332,7 +332,7 @@ form input, form textarea{
     background: rgb(255, 255, 255);
     padding: 15px;
     margin: 15px 0;
-    color: rgb(255, 255, 255);
+    color: rgb(63, 63, 63);
     font-size: 18px;
     border-radius: 6px;
 }
@@ -360,6 +360,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        padding-top: 0px;
     }
     nav ul{
         background: rgb(127, 127, 255);
