@@ -349,7 +349,7 @@ nav .fa-solid{
 }
 @media only screen and (max-aspect-ratio: 1/1){
     #header{
-        background-image: url(images/presentation_mobile.png);
+        background-image: url(images/presentation_mobile.jpg);
     }
     .header-text p{
         font-size: 16px;
