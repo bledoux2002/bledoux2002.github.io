@@ -335,6 +335,7 @@ form input, form textarea{
     color: rgb(63, 63, 63);
     font-size: 18px;
     border-radius: 6px;
+    resize: none;
 }
 form .btn2{
     padding: 14px 60px;
