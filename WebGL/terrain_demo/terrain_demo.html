@@ -1,0 +1,31 @@
+<!-- Last edited by Dietrich Geisler 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body onload="main()">
+    <!-- WebGL Utility Scripts -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+
+    <!-- Load our terrain script -->
+    <script src="terrain.js"></script>
+
+    <!-- Select a JavaScript file -->
+    <script src="terrain_demo.js"></script>
+
+    <!-- Setup the Canvas -->
+    <canvas id="canvas" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <!-- Explanation of camera controls -->
+    <p>
+        Controls for camera movement: 
+        WASD forward/backward/left/right, R to go up, and F to go down
+    </p>
+</body>
+
+</html>

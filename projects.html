@@ -46,6 +46,7 @@
 				<p>Paper can be found <a href="misc/botbowl.pdf">here</a>. Abstract: We discuss the methods by which we evolved a rules-based expert system for a competitive agent to submit to the Bot Bowl competition using Genetic Algorithms (GAs). The expert system is evolved by identifying variables that can be refined through the GA, and measuring the success of each variation by its performance against a baseline opponent. A variation is derived from a string of bits, or “chromosome,” that defines the rule set used by the agent. One of the unique challenges of using a GA in the Bot Bowl environment is the low-scoring nature of the game. Rather than using the score as the only measurement of success for the fitness calculation, we propose including the ball’s progression towards the opposing end zone to quantify the performance of a particular chromosome.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -60,6 +61,7 @@
 				<p>An open source music downloader and player. Original intended for TTRPG usage as a more seamless way to play ambient music, it also serves well as a normal music player. You can download single videos or entire playlists from youtube with a single link thanks to <a href="https://github.com/yt-dlp/yt-dlp">yt_dlp</a>. Playback comes with modern functionality such as keyboard shortcuts for seeking through a track, volume control, switching playlists, and deleting tracks. Playlists can be renamed and shuffled. All settings are saved into a json file that is loaded on launch. The UI is made with TKinter. Future work will focus around feature implementation and compatibility with more operating systems. Created as a personal project for use within my TTRPG group.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -74,6 +76,7 @@
 				<p>Designed as a framework, the goal of this project is to allow for Unity developers to procedurally generate their game worlds with relative ease. The developer first provides a set of tiles and creates "TileData" objects for each one. These TileDatas allow for developers to assign rules to each tile, dictating which tiles can be placed next to each other, and the frequency of generating each tile. Multi-tile sprites are handled by allowing for "required tiles" in the TileDatas, forcing the necessary tiles to be generated in the appropriate relative locations to each other. After the TileData rules are defined, the tool generates in real-time. As unassigned tiles on the map come within a developer-defined range of the main camera, a list of valid tiles is created using the intersect of valid tiles adjacent to surrounding tiles (the valid tiles South of the tile immediately North, etc.). The map is saved to a JSON file so that tiles generated during runtime aren't lost. Current work involves eliminating "clamping" errors where a tile cannot generate because it is surrounded by tiles that have no connecting tiles. This is accomplished by simulating several layers around the empty tile so that once a valid generation is found, a tile is selected that is guaranteed to not cause clamping. Future work will focus on adding more features and demonstrating the tool's capabilities in an open-world game. Upon completion this tool will be placed on the Unity Asset store as a free package. Created as a Senior-Year Integrative Project (SIP) for AT491/492: Independent Study under the Ammerman Center using Unity 2D.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -88,6 +91,22 @@
 				<p id="desc">A study into different methods of guiding users in a virtual environment. Focusing on subtle diegetic methods, the goal is to determine how efficient each of these methods are across a range of subjects for a single general purpose. The methods include using landmarks, light, paths, and terrain as means of attracting a player's attention. There are 5 "scenes," each aimed at testing a particular method, except for the control scene. Participants in the study complete the control test first, then the rest of the 4 remaining test in a randomized order. Participants are timed overall and for how long they used the sprint functionality. During tests, breaks between scenes are used to conduct quick interviews. Afterwards, screen recordings, data logs, and test notes are gathered together for comparison and analysis. A preliminary round of testing was completed to ensure the tests are relatively completable and reasonable in scope. Future work will focus on conducting a full set of tests with a large pool of volunteers. Created to supplement research for COM495/496: Research Seminar using Unity 3D.</p>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="about-col-1">
+				<div class="work">
+					<img src="./images/projects/diegetic_fit.jpg" alt="Diegetic Direction Main Menu">
+					<div class="layer">
+						<a href="../WebGL/final_project.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="about-col-2">
+				<h2><a href="../WebGL/final_project.html"><b>Dinghy at Midnight</b></a></h1>
+				<p id="desc">A WebGL program made mostly from scratch displaying a floating boat and lighthouse. The scene contains animations, multiple lighting sources, controls to move the camera around, and settings for the lighting and landscape. The textures and lighting are all done from scratch using vertex and fragment shaders. Created for CS351: Introduction to Computer Graphics using HTML, JavaScript, C++, WebGL, and Blender for some of the more complex models.</p>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -102,6 +121,7 @@
 				<p id="desc">A winter-themed version of <a href="https://store.steampowered.com/app/448510/Overcooked/">Overcooked</a>, where the player makes hot cocoa orders for their guest. My first game jam, and used as a challenge to create as much of the game art as possible using only the basic Unity2D shapes. Completed as a submission to <a href="https://itch.io/jam/cozy-winter-jam-2023/rate/2427746">Cozy Winter Game Jam 2023</a> using Unity 2D.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -116,6 +136,7 @@
 				<p id="desc">Currently text-based, this program facilitates the creation and management of characters for the Fallout Tabletop Roleplaying Game by Modiphius Entertainment. The process is automated by providing the user with choices for their character, and taking input to appropriately adjust that character's stats and inventory. For example: if Strength is upgraded, all stats based on a calculation of the character's strength are updating accordingly, such as carry weight and melee damage. The program is not for one-time use, as well. If a character levels up, the program will present similar options to the creation of the character: choice of perks and upgradable skills, stats are adjusted, etc. As of now, the framework is set up so character JSON files can be editted manually in the program. Current work is focused on automating each of the steps onvilved in character creation and implementing a GUI. Future work will focus on the level up feature, completion of the data file that stores all of the perks and equipment listed in the Core Rulebook, and options for enabling supplementary content published by Modiphius Entertainment. As this is an open source project, community-made content is highly valued and will be either added as optional packages or provided the ability to add it to the data files manually. The final goal with this project is to distribute it as an executable to relevant pen-and-paper/TTRPG communities. Upon completion, a website integration is being considered. Created as a personal project using Python.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -130,6 +151,7 @@
 				<p id="desc">The Connecticut College campus bar, Humphrey's, recreated in virtual reality. The environment is used as a testing grounds for comparing and contrasting interaciton and locomotion with controllers and hand-tracking. Different features of the VR Bar include an ID scanner, a station to pour (and spill) a drink, and a functional pool table. Overall the benefits of using controllers far outweighed the immersion of using hand-tracking for interaction. ontrollers are more consistent and easier for the headset to keep track of, while hand-tracking was jittery and unreliable. Completed as a group final project for COM309: Graphics and Virtual Environments using Unity 3D and the <a href="https://assetstore.unity.com/packages/tools/integration/oculus-integration-deprecated-82022">Oculus Integration</a>.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -144,6 +166,7 @@
 				<p id="desc">A recreation of 3 gamemodes in <a href="https://store.steampowered.com/app/714010/Aimlabs/">AimLabs</a>, a popular aim-training program for FPS games. The goal was to set up testing scenarios in which to collect data relating to <a href="https://en.wikipedia.org/wiki/Fitts%27s_law">Fitt's Law</a> when applied in virtual reality. The first of the three modes recreated is Spidershot, in which an orb teleports on destruction to a random location alternating with the center of the test area. The second mode recreated is Gridshot, in which the orb will teleport to one randomized location in a predetermined 5x5 grid directly in front of the player upon being destroyed. The final mode recreated is Strafetrack, in which the orb will move side-to-side, randomly switching directions, and teleporting to a random location along that axis upon destruction. Completed as a group midterm project for COM309: Graphics and Virtual Environments using Unity 3D and <a href="https://assetstore.unity.com/packages/tools/integration/vrtk-virtual-reality-toolkit-vr-toolkit-64131">VRTK</a>.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -158,6 +181,7 @@
 				<p id="desc">Paper can be found <a href="misc/mffe.pdf">here</a>. MATLAB project that takes sound files and uses examples to determine which fundamental frequencies are present. The program then recreates the sound file using the fundamental frequencies detected. Completed as a final project for COM312: Digital Sound Processing using <a href="https://www.mathworks.com/products/matlab.html">MATLAB</a>.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -172,6 +196,7 @@
 				<p id="desc">2D space-themed rhythm game designed for touch screens. Specifically, this game was designed to make use of the <a href="https://www.conncoll.edu/information-services/instructional-technology/technologies-for-teaching-and-learning/visualization-wall/">Visualization Wall</a> in the basement of Shain Library, a collection of panels and lasers that come together to form an 8' by 4' touch screen. The core gameplay loop consists of tapping the stars as they cross the glowing ring on their way towards the centerpiece. The closer the center of the star is to the ring, the higher the point gain. Completed as a group final project for COM217: Entertainment Software Design using Unity 2D.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">
@@ -186,6 +211,7 @@
 				<p id="desc">Python-based recreation of UNO! cardgame, can be run straight from the terminal. Pits the player against a very simple computer opponent with a small ruleset determining its playstyle. Completed as a final project for COM110: Introduction to Computer Science and Problem Solving using Python.</p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="about-col-1">
 				<div class="work">

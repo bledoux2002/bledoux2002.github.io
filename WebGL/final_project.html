@@ -1,0 +1,80 @@
+<!-- Last edited by Dietrich Geisler 2025 -->
+
+<!-- Boat: https://sketchfab.com/3d-models/victorian-row-boat-lamp-low-poly-744a2da01dac469cbded105427bdbd11 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <!-- Sets an icon for the page -->
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
+</header>
+
+<body onload="main()">
+    <!-- WebGL Utility Scripts -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+
+    <!-- Load our terrain script -->
+    <script src="terrain.js"></script>
+
+    <!-- Select a JavaScript file -->
+    <script src="final_project.js"></script>
+
+    <!-- Setup the Canvas -->
+    <canvas id="canvas" width="600" height="600">
+        Please use a browser that supports "canvas"
+    </canvas>
+    
+    <div>
+        <p>
+            <b>CAMERA CONTROLS</b> WASD for forward, left, back, right; Space for up, Shift for down; arrow keys for rotating.
+        </p>
+        <p>
+            Pitch can be swapped betwen standard (Down Arrow looks down) and "Airplane" (Down Arrow looks up).
+        </p>
+        <p>
+            <input type="button" onclick="reset()" value="Reset">
+            <input type="button" onclick="resetOrientation()" value="Reset Camera Orientation">
+            <input type="button" onclick="swapPitch()" value="Standard Pitch" id="pitchButton">
+        </p>
+        <p>
+            <label id="waterLabel" for="water"></label>
+            <input type="range" id="water" min="0" max="10" step=".01" />
+        </p>
+    </div>
+    <div>
+        <p>
+            <label id="houseSpec" for="houseSpecS"></label>
+            <input type="range" id="houseSpecS" min="1" max="32" step="1"/>
+            <label id="lampSpec" for="lampSpecS"></label>
+            <input type="range" id="lampSpecS" min="1" max="32" step="1"/>
+            <label id="moonSpec" for="moonSpecS"></label>
+            <input type="range" id="moonSpecS" min="1" max="32" step="1"/>
+        </p>
+        <p>
+            <label id="houseC" for="houseCS"></label>
+            <input type="range" id="houseCS" min="0" max="4" step=".1"/>
+            <label id="lampC" for="lampCS"></label>
+            <input type="range" id="lampCS" min="0" max="4" step=".1"/>
+        </p>
+        <p>
+            <label id="houseL" for="houseLS"></label>
+            <input type="range" id="houseLS" min="0" max="1" step=".01"/>
+            <label id="lampL" for="lampLS"></label>
+            <input type="range" id="lampLS" min="0" max="1" step=".01"/>
+        </p>
+        <p>
+            <label id="houseQ" for="houseQS"></label>
+            <input type="range" id="houseQS" min="0" max="1" step=".001"/>
+            <label id="lampQ" for="lampQS"></label>
+            <input type="range" id="lampQS" min="0" max="1" step=".001"/>
+        </p>
+        
+    </div>
+
+</body>
+
+</html>
