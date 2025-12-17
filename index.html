@@ -2,237 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Ledoux</title>
-	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/cd037d997b.js" crossorigin="anonymous"></script>
 	<base target="_blank" rel="noopener noreferrer">
 </head>
 <body>
-<!-- ---------header-------- -->
-<div id="header">
-    <div class="container">
+    <header>
         <nav>
-            <div class="logo"></div>
-            <ul id="sidemenu">
-                <li><a href="#header" target="_self">Home</a></li>
-                <li><a href="#about" target="_self">About</a></li>
-                <li><a href="#services" target="_self">Services</a></li>
-                <li><a href="#portfolio" target="_self">Portfolio</a></li>
-                <li><a href="#contact" target="_self">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()" style="padding-top:16px"></i>
+            <div class="container">
+                <h1 class="logo">Benjamin Ledoux</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#game-dev">Game Dev</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./misc/resume.pdf">Resume</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="header-text">
-            <p>Software Developer</p>
-            <h1><span>Benjamin</span> Ledoux</h1>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm an AI/ML engineer with experience in game development. I received my Master's in Computer Science from Northwestern University, focusing on Machine Learning and Deep Learning. In my spare time I participate in Game Jams and play Dungeons and Dragons.</p>
         </div>
-    </div>
-</div>
-<!-- -----------about----------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="./images/pfp.jpg" alt="Headshot">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>&emsp;&emsp;&emsp;&emsp;I am a Master's student at Northwestern University studying Computer Science. My areas of focus involve Software Development, Artificial Intelligence, and Game Development.
-                    <br>&emsp;&emsp;&emsp;&emsp;In Spring 2024, I received my BA in Computer Science from Connecticut College, after evolving a competitive agent in BotBowl using a genetic algorithm and conducting research on diegetic methods of guidance in interactive media. I also received my certificate from the Ammerman Center for Arts and Technology in 2024 after developing an open-source tool for the Unity engine to facilitate procedurally generated worlds. You can read more about my current and past work on the <a href="./projects.html" target="_self">Projects</a> page.
-                    <br>&emsp;&emsp;&emsp;&emsp;My final two years at Conn were spent working as a teacher's assistant: grading homeworks, conducting labs, and hosting open study sessions for students to get help on coursework. As a senior I was the Communications Manager for the CS Student Advisory Board at Conn. On top of general duties such as planning events and providing resources to students, I also managed department emails and social media accounts focused on community outreach.
-	    			<br>&emsp;&emsp;&emsp;&emsp;As for personal projects, I am currently developing a character creation and management program for tabletop roleplaying games. In-depth descriptions of all of my current and previous work, along with links to their GitHub repositories, can be found on the <a href="./projects.html" target="_self">Projects</a> page.
-		    		<br>&emsp;&emsp;&emsp;&emsp;In my free time I enjoy game development, tabletop roleplaying games, volleyball and soccer.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="project-grid" style="display: flex; gap: 24px; flex-wrap: wrap;">
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/Music-Box">Music Box</a></h3>
+                    <p>Developed an open-source music downloader/player for personal using Python, <a href="https://github.com/yt-dlp/yt-dlp">yt_dlp</a>, and TKinter. The project began as a tool for TTRPG use.</p>
+                    <div class="media-box">
+                        <img src="./images/sources/musicbox.jpg" alt="Music Box Screenshot">
+                    </div>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Python</span><br>Software and AI development using Python coding language</li>
-                        <li><span>C++</span><br>Parallel Computing and optimizations using C++</li>
-                        <li><span>Unity C#</span><br>Development of 2D and 3D games in the Unity Real-Time Development Platform</li>
-                    </ul>
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/botbowl">Bot Bowl Agent Evolution</a></h3>
+                    <p>Evolving a rules-based expert system for BotBowl using a genetic algorithm in Python.</p>
+                    <div class="media-box">
+                        <img src="./images/projects/botbowl_fit.jpg" alt="BotBowl Screenshot">
+                    </div>
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Sep 2022 - May 2024</span><br>Teacher's assistant, Connecticut College Computer Science department</li>
-                        <li><span>Jun 2023 - Aug 2023</span><br>IT and Network Intern at Massachusetts Task Force 1</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Sep 2024 - Current</span><br>MS in Computer Science, Northwestern University</li>
-                        <li><span>Sep 2020 - May 2024</span><br>BA in Computer Science, Connecticut College</li>
-                        <li><span>Jan 2022 - May 2024</span><br>Certificate, Ammerman Center for Arts and Technology</li>
-                    </ul>
+                <div class="project">
+                    <h3><a href="./WebGL/final_project.html">Dinghy at Midnight</a></h3>
+                    <p>Small 3D scene using WebGL made for Computer Graphics course.</p>
+                    <div class="media-box">
+                        <img src="./images/sources/dinghy.jpg" alt="3D scene of a small boat">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- -----------services-------------(rework later, these are just duplicates of Skills section) -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>Programming</h2>
-                <p>6 years of experience through coursework, tutoring, and personal projects. Specialties include Artificial Intelligence and Game Development.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-brain"></i>
-                <h2>Education</h2>
-                <p>I have been sharing my experience with others since grade school through tutoring programs and TA work.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -----portfolio----- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="./images/projects/botbowl_fit.jpg" alt="Botbowl UI">
-                <div class="layer">
-                    <h3>Bot Bowl Evolution</h3>
-                    <p>Research on evolving a competitive agent for Bot Bowl using a genetic algorithm to refine an expert system. Click See More for paper</p>
-                        <a href="https://github.com/bledoux2002/botbowl"><i class="fa-solid fa-up-right-from-square"></i></a>
+    </section>
+
+    <section id="game-dev" class="section">
+        <div class="container">
+            <h2>Game Dev Work</h2>
+            <div class="project-grid" style="display: flex; gap: 24px; flex-wrap: wrap;">
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/Drivers-Ed">Driver's Ed</a></h3>
+                    <p>An arcade-style game where the player weaves through traffic. Built in Unity with C#.</p>
+                    <div class="media-box">
+                        <!-- <img src="./images/sources/drivers_ed.jpg" alt="Driver's Ed Screenshot"> -->
+
+                        <!-- <video controls preload="none" style="max-width:100%; display:block; margin-bottom:10px;">
+                            <source src="./videos/drivers-ed.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> -->
+
+                        <div style="display: flex; justify-content: center;">
+                            <iframe
+                                src="https://www.youtube.com/embed/jxFfs_EJMKU?si=qydCgIV4UcJ5OXl6"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="./images/projects/musicbox_fit.jpg" alt="Music Box UI">
-                <div class="layer">
-                    <h3>Music Box</h3>
-                    <p>Open source MP3 downloader and player. Modern functionality and sleek design.</p>
-                        <a href="https://github.com/bledoux2002/Music-Box"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/Fisher">Fisher</a></h3>
+                    <p>A small fishing game, guide your hook down, then catch as many fish as you can on the way up. Built in Unity with C#.</p>
+                    <div class="media-box">
+                        <!-- <img src="./images/sources/fisher.jpg" alt="Fisher Screenshot"> -->
+
+                        <div style="display: flex; justify-content: center;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/EMC9tsxCzJI?si=B6JQow0ajl8yn1-2" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="./images/projects/overbrewed_fit.jpg" alt="Overbrewed gameplay from Cozy Winter Game Jam 2023">
-                <div class="layer">
-                    <h3>Overbrewed</h3>
-                    <p>A 2D top-down arcade game made independently as a 3-day game jam submission</p>
-                        <a href="https://github.com/bledoux2002/Overbrewed"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/Capsule-Soccer">Capsule Soccer</a></h3>
+                    <p>Go head to head and outscore your opponent. Built in Unity with C#.</p>
+                    <div class="media-box">
+                        <img src="./images/sources/soccer.jpg" alt="Capsule Soccer Screenshot">
+                    </div>
                 </div>
-            </div>
-        </div>
-        <a href="./projects.html" class="btn" target="_self">See More</a>
-    </div>
-</div>
-<!-- -----portfolio (games)----- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Game Dev</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="./images/projects/drivers_ed_fit.jpg" alt="Fisher game">
-                <div class="layer">
-                    <h3>Fisher</h3>
-                    <p>A simple arcade-style driving game. Avoid oncoming cars as you speed down the endless road. Speed past slowpokes, ride the shoulder, or have a leisurely drive. Brakes included, but you won't use them.</p>
-                        <a href="https://github.com/bledoux2002/Drivers-Ed"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/Overbrewed">Overbrewed</a></h3>
+                    <p>My winter take on Overcooked, submitted to the 3-day <a href="https://itch.io/jam/cozy-winter-jam-2023">Cozy Winter Game Jame 2023</a>. Built in Unity with C#.</p>
+                    <div class="media-box">
+                        <img src="./images/sources/overbrewed.jpg" alt="Capsule Soccer Screenshot">
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="./images/projects/SIP_fit.jpg" alt="Procedural Generation Framework in 2D open-world game">
-                <div class="layer">
-                    <h3>Procedural Generation Framework</h3>
-                    <p>Framework for dynamic generation of tilemaps in Unity</p>
-                        <a href="https://github.com/bledoux2002/Procedural-Generation-Framework"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="./images/projects/overbrewed_fit.jpg" alt="Overbrewed gameplay from Cozy Winter Game Jam 2023">
-                <div class="layer">
-                    <h3>Overbrewed</h3>
-                    <p>A 2D top-down arcade game made independently as a 3-day game jam submission</p>
-                        <a href="https://github.com/bledoux2002/Overbrewed"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="project">
+                    <h3><a href="https://github.com/bledoux2002/Procedural-Generation-Framework">Procedural Generation Framework</a></h3>
+                    <p>Procedural generation of tilemaps for 2D worlds in Unity engine using C#.</p>
+                    <div class="media-box" style="margin-top: auto;">
+                        <img src="./images/sources/SIP.jpg" alt="PGF Screenshot">
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="./games.html" class="btn" target="_self">See More</a>
-    </div>
-</div>
-<!-- ---------contact--------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><a href=mailto:bledoux2002@gmail.com><i class="fa-solid fa-paper-plane"></i> bledoux2002@gmail.com</a></p>
-                <p><a href="tel:603-362-3841"><i class="fa-solid fa-square-phone"></i> 6033623841</a></p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/benjamin-j-ledoux/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/bledoux2002"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.youtube.com/@bledoux2002"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <a href="misc/resume.pdf" class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href=mailto:bledoux2002@gmail.com>bledoux2002@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/benjamin-j-ledoux/">linkedin.com/in/benjamin-j-ledoux</a></p>
+            <p>GitHub: <a href="https://github.com/bledoux2002">github.com/bledoux2002</a></p>
+            <p>YouTube: <a href="https://www.youtube.com/@bledoux2002">youtube.com/@bledoux2002</a></p>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- event is deprecated in js file, only works here -->
-<script>
-	var tablinks = document.getElementsByClassName("tab-links");
-	var tabcontents = document.getElementsByClassName("tab-contents");
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Benjamin Ledoux. All rights reserved.</p>
+        </div>
+    </footer>
 
-	function opentab(tabname){
-		for(tablink of tablinks){
-			tablink.classList.remove("active-link");
-		}
-		for(tabcontent of tabcontents){
-			tabcontent.classList.remove("active-tab");
-		}
-		event.currentTarget.classList.add("active-link");
-		document.getElementById(tabname).classList.add("active-tab");
-	}
-</script>
-
-<script>
-	var sidemenu = document.getElementById("sidemenu");
-
-	function openmenu(){
-    	sidemenu.style.right = "0";
-	}
-	function closemenu(){
-    	sidemenu.style.right = "-200px";
-	}
-</script>
-
-<script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbz2fh8vXq4qs5i-poRF07NBEC-X8mL89DqEvrhzW9JfdIJVWoeQddhGa6JR7OF5aTYWug/exec'
-	const form = document.forms['submit-to-google-sheet']
-	const msg = document.getElementById("msg")
-
-	form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		  .then(response => {
-			  msg.innerHTML = "Message sent successfully"
-			  setTimeout(function(){
-				  msg.innerHTML = ""
-			  }, 5000)
-			  form.reset()
-		  })
-		  .catch(error => console.error('Error!', error.message))
-	  })
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
