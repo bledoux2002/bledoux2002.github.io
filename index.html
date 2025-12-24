@@ -24,13 +24,17 @@
     </header>
 
     <section id="about" class="section">
-        <div class="container" style="display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
-            <div style="flex: 1 1 300px;">
-                <h2>About Me</h2>
-                <p>I'm an AI/ML engineer with experience in game development. I received my Master's in Computer Science from Northwestern University, focusing on Machine Learning and Deep Learning. In my spare time I participate in Game Jams and play Dungeons and Dragons.</p>
-            </div>
-            <div style="flex: 0 0 160px; display: flex; justify-content: center;">
-                <img src="./images/headshot.jpg" alt="Benjamin Ledoux Headshot" style="max-width: 160px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 32px;">
+            <h2 style="text-align: center; width: 100%;">About Me</h2>
+            <div style="display: flex; align-items: center; gap: 32px; flex-wrap: wrap; width: 100%; justify-content: center;">
+                <div style="flex: 1 1 300px; min-width: 250px; max-width: 750px">
+                    <p>I'm an AI/ML engineer with experience in game development. I received my Master's in Computer Science from Northwestern University, 
+                        focusing on Machine Learning and Deep Learning, and my Bachelor's from Connecticut College, where I conducted independent studies 
+                        and research at the intersection of art and technology. In my spare time I participate in Game Jams and play Dungeons and Dragons.</p>
+                </div>
+                <div style="flex: 0 0 160px; display: flex; justify-content: center;">
+                    <img src="./images/headshot.jpg" alt="Benjamin Ledoux Headshot" style="max-width: 160px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+                </div>
             </div>
         </div>
     </section>
@@ -41,21 +45,22 @@
             <div class="project-grid" style="display: flex; gap: 24px; flex-wrap: wrap;">
                 <div class="project">
                     <h3><a href="https://github.com/bledoux2002/Music-Box">Music Box</a></h3>
-                    <p>Developed an open-source music downloader/player for personal using Python, <a href="https://github.com/yt-dlp/yt-dlp">yt_dlp</a>, and TKinter. The project began as a tool for TTRPG use.</p>
+                    <p>Developed an open-source MP3 player for personal use using Python, <a href="https://github.com/yt-dlp/yt-dlp">yt_dlp</a>, and TKinter. 
+                        The project began as a tool for TTRPG use.</p>
                     <div class="media-box">
                         <img src="./images/sources/musicbox.jpg" alt="Music Box Screenshot">
                     </div>
                 </div>
                 <div class="project">
                     <h3><a href="https://github.com/bledoux2002/botbowl">Bot Bowl Agent Evolution</a></h3>
-                    <p>Evolving a rules-based expert system for BotBowl using a genetic algorithm in Python.</p>
+                    <p>Conducted research on evolving a rules-based expert system for BotBowl using a genetic algorithm in Python.</p>
                     <div class="media-box">
                         <img src="./images/projects/botbowl_fit.jpg" alt="BotBowl Screenshot">
                     </div>
                 </div>
                 <div class="project">
                     <h3><a href="./WebGL/final_project.html">Dinghy at Midnight</a></h3>
-                    <p>Small 3D scene using WebGL made for Computer Graphics course.</p>
+                    <p>A small 3D scene using WebGL made for a Computer Graphics course at Northwestern.</p>
                     <div class="media-box">
                         <img src="./images/sources/dinghy.jpg" alt="3D scene of a small boat">
                     </div>
